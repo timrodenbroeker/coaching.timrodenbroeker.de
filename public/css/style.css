@@ -1,0 +1,14 @@
+#projects {
+  width: 100%;
+  max-width: 600px;
+  margin: 100px auto;
+}
+
+nav#main {
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+}

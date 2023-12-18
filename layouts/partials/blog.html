@@ -1,0 +1,8 @@
+<section style="margin-top: 100px">
+  <div class="container">
+    <h1>Archive</h1>
+  </div>
+  <div class="container">
+    {{ range .Site.RegularPages }} {{ partial "card.html" . }} {{ end }}
+  </div>
+</section>

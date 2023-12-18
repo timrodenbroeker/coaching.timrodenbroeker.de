@@ -1,0 +1,27 @@
+<div class="card">
+  <a href="{{ .RelPermalink }}">
+    <div style="aspect-ratio: 4/3" class="card-thumbnail">
+      <img src="{{.Params.featured_image}}" />
+    </div>
+    <div style="display: block; font-weight: bold">{{ .Title }}</div>
+    <div style="color: #aaaaaa">
+      {{ .Lastmod.Format "02.01.2006" }} / {{ .Content | countwords }} words
+    </div>
+    <div style="color: #aaaaaa">
+      {{ if isset .Params "author" }} {{.Params.author}} {{ else }}
+      <!-- The 'author' parameter does not exist -->
+      <!-- Your alternative code here -->
+      <div class="hidden-content">
+        {{ .File.Path | plainify}}{{ .Content | plainify}}
+      </div>
+      {{ end }}
+    </div>
+  </a>
+  <ul class="card-cats">
+    {{ range .GetTerms "categories" }}
+    <li class="list di">
+      <a href="{{ .RelPermalink }}" class="card-cat"> {{- .LinkTitle -}} </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

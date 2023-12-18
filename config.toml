@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'trcc'
+buildDrafts = true
+paginate = 1000
+unsafe = true
+[markup.goldmark.renderer]

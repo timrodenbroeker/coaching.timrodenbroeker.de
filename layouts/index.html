@@ -16,5 +16,11 @@
     </div>
   </div>
 </section>
-
+<div class="container-wide">
+  <div class="row">
+    {{ range .Pages }}
+    <div class="col-sm-4">{{ partial "card.html"}}</div>
+    {{ end }}
+  </div>
+</div>
 {{ partial "blog.html"}} {{ end }}

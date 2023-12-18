@@ -8,3 +8,4 @@ summary: "summary here"
 featured_image: "/images/placeholder.png"
 ---
 
+Reflect --> Define ---> Reach
